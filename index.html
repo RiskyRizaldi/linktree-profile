@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risky Web Profile</title>
+    <style>
+        html, body, *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .outlier-box{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            height: 100vh;
+            margin: auto;
+            background-image: url('gambar3.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+    
+            
+        }
+        .my-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            padding-bottom: 20px;
+            
+        }
+        .box-link{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            gap: 8px;
+            
+        }
+        .box-link button{
+            background-color: whitesmoke;
+            border: none;
+            padding: 8px;
+            align-items: center;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: 150ms ease-in-out;
+            
+        }
+        .my-box img{
+            border-radius: 60%;
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .box-link button:hover{
+            background-color: rgb(10, 19, 19);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="outlier-box">
+        <div class="my-box">
+            <img class="my-box img" src="profile.jpg" width="400" height="280"/>
+            <h1>RISKY RIZALDI</h1>
+            <p>Selamat datang di Website Saya</p>
+            <p>Apa kabar kalian semua</p>
+        </div>
+        <div class="box-link">
+            <button onclick="hayu('https://facebook.com')">Profile Page</button>
+            <button onclick="hayu('https://instagram.com/riskyrizaldiii/')">Instagram</button>
+            <button onclick="hayu('https://telegram.com')">Telegram</button>
+            <button onclick="hayu('https://Whatsapp.com ')">Whatsapp</button>
+            <button onclick="hayu('https://www.linkedin.com/in/risky-rizaldi-4064011b8/')">Linkedin</button>
+        </div>
+    </div>
+    <script>
+        function hayu(kemana){
+            window.open(kemana)
+
+        }
+    </script>
+    </body>
+</html>
